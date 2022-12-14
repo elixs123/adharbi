@@ -6,19 +6,60 @@ use Illuminate\Http\Request;
 use App\Models\Pages;
 use App\Models\Sub_Pages;
 use App\Models\News;
+use App\Models\Gallery;
 
 class HomeController extends Controller
 {
-    public function index()
-    {
-        $sub_page = Sub_Pages::where('page_id', 1)->get();
-
-        return view('home', ["sub_page" => $sub_page]);
+    public function index(){
+        return view('home');
     }
 
     public function news(){
         $news = News::all();
 
         return view('news', ['news' => $news]);
+    }
+
+    public function pocetna(){
+        return view('pocetna');
+    }
+
+    public function newsDetails($id){
+        $new = News::findOrFail($id);
+
+        return view('newsDetails', ['new' => $new]);
+    }
+
+    public function gallery(){
+        $gallerys = Gallery::all();
+
+        return view('gallery', ['gallerys' => $gallerys]);
+    }
+
+    public function historijat(){
+        return view('onama.historijat');
+    }
+    
+    public function misijaivizija(){
+        return view('onama.misijaivizija');
+    }
+
+    public function ostruktura(){
+        return view('onama.ostruktura');
+    }
+
+    public function kosmo(){
+        return view('onama.kosmo');
+    }
+
+    public function oposlovno(){
+        return view('onama.oposlovno');
+    }
+
+    public function changeLanguge($lang){
+        \App::setLocale($lang);
+        session()->put('locale', $lang);
+  
+        return redirect()->back();
     }
 }

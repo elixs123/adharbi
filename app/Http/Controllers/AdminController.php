@@ -7,6 +7,8 @@ use App\Models\Pages;
 use App\Models\Sub_Pages;
 use App\Models\Sub_Pages_Nav;
 use App\Models\News;
+use App\Models\Gallery;
+use Validator;
 
 class AdminController extends Controller
 {
@@ -22,38 +24,46 @@ class AdminController extends Controller
         return view('admin.news', ['news' => $news]);
     }
 
+    public function deleteNews($id){
+        News::find($id)->delete();
+
+        return redirect()->back()->with('mesasge', 'Uspješno ste obrisali novost');
+    }
+
     public function addNews(){
         return view('admin.addNews');
     }
 
     public function addNewsPost(Request $request){
-        if ($request->hasFile('img')) {
-            // $validator = Validator::make($request->all(), [
-            // 'img' => 'dimensions:width=1701,height=451'
-            // ]);
+        $validated = $request->validate(
+            [
+                'name' => 'required',
+                'description' => 'required',
+                'img' => 'required|dimensions:width=500,height=334'
+            ],
+            [
+                'name.required' => 'Polje naziv je obavezno',
+                'description.required' => 'Polje opis je obavezno',
+                'img.required' => 'Polje slika je obavezno',
+                'img.dimensions' => 'Slika mora biti dimenzija 500x334px'
+            ]
+        );
 
-            // if ($validator->fails()) {
-            //     return redirect()->back()->with('error', 'Slika mora biti dimenzija 1701 x 451');
-            // }
+        $image = $request->file('img');
 
-            $image = $request->file('img');
+        $name = $image->getClientOriginalName();
+        $destinationPath = public_path('/img/news');
+        $image->move($destinationPath, $name);
 
-            $name = $image->getClientOriginalName();
-            $destinationPath = public_path('/img/news');
-            $image->move($destinationPath, $name);
+        $news = new News;
 
-            $news = new News;
-
-            $news->img = $name;
-            $news->name = $request->input('name');
-            $news->description = $request->input('description');
-            
-            $news->save();
-
-            return redirect()->back()->with("success", "Uspješno ste dodali slider");
-        }
+        $news->img = $name;
+        $news->name = $request->input('name');
+        $news->description = $request->input('description');
         
-        return redirect()->back();
+        $news->save();
+
+        return redirect()->back()->with("message", "Uspješno ste dodali novost");
     }
 
     public function insertPage(Request $request){
@@ -99,7 +109,7 @@ class AdminController extends Controller
 
     private function insertNavPage($request){
         if($request->has('img')){
-                $fileName = $this->saveImage($request->file('img'));
+            $fileName = $this->saveImage($request->file('img'));
                 
                 $page = new Sub_Pages_Nav;
                 $page->page_id = 1;
@@ -120,4 +130,58 @@ class AdminController extends Controller
 
         return $fileName;
     } 
+
+    public function editNews($id){
+        $new = News::where('id', $id)->get();
+
+        return view('admin.editnews', ['new' => $new]);
+    }
+
+    public function editNewsPost($id, Request $request){
+        $new = News::find($id);
+
+        $new->name = $request->input('name');
+        $new->description = $request->input('description');
+
+        if($request->has('img')){
+            $new->img = $request->input('img');
+        }
+        
+
+        $new->save();
+
+        return redirect()->route('adminNews');
+    }
+
+    public function gallery(){
+        $gallerys = Gallery::all();
+
+        return view('admin.gallery', ['gallerys' => $gallerys]);
+    }
+
+    public function addGallery(){
+        return view('admin.addGallery');
+    }
+
+    public function addGalleryPost(Request $request){
+        $validation = $request->validate([
+            'img' => 'required'
+        ],
+        [
+            'img.required' => 'Polje slika je obavezno'
+        ]);
+
+        $image = $request->file('img');
+
+        $name = $image->getClientOriginalName();
+        $destinationPath = public_path('/img/gallery');
+        $image->move($destinationPath, $name);
+
+        $gallery =  new Gallery;
+        $gallery->img = $name;
+        
+        $gallery->save();
+
+        return redirect()->back()->with('message', 'Dodali ste novu sliku u galeriju');
+    }
 }

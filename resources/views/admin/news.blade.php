@@ -11,13 +11,17 @@
         <div class="row">
             @foreach($news as $new)
                 <div class="col-sm-4 push">
-                    <img src="{{asset('img/news/'. $new->img)}}" alt="image" class="img-responsive center-block">
+                    <img src="{{asset('img/news/'. $new->img)}}" alt="image" class="img-responsive">
                     <div class="box-body">
                         <h4>{{$new->name}}</h4>
                         <p><?php echo $new->description ?></p>
                         <p>{{$new->created_at->format('d.m.Y H:i')}}</p>
-                        <button class="btn btn-info">Izmjeni</button>
-                        <button class="btn btn-danger">Izbrisi</button>
+                        <form action="{{route('adminDeleteNews', ['id' => $new->id])}}" method="post" class="btn-group">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-info" type="submit">Izbriši</button>
+                        </form>
+                        <a href="{{route('adminEditNews', ['id' => $new->id])}}" class="btn btn-danger">Izmjeni</a>
                     </div>
                 </div>
             @endforeach
