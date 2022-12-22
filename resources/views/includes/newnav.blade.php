@@ -36,8 +36,8 @@
             <li><a class="dropdown-item" href="{{route('kosmo')}}">Ko smo - Djelatnost firme</a></li>
             <li><a class="dropdown-item" href="{{route('misijaivizija')}}">Misija vizija</a></li>
             <li><a class="dropdown-item" href="{{route('ostruktura')}}">Organizaciona struktura</a></li>
-            <li><a class="dropdown-item" href="{{route('misijaivizija')}}">Ostvarena poslovno naučna saradnja</a></li>
-            <li><a class="dropdown-item" href="{{route('ostruktura')}}">Galerija</a></li>
+            <li><a class="dropdown-item" href="{{route('oposlovno')}}">Ostvarena poslovno naučna saradnja</a></li>
+            <li><a class="dropdown-item" href="{{route('gallery')}}">Galerija</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -48,10 +48,10 @@
             {{ __('nav.inrc') }}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('historijat')}}">O INRC</a></li>
-            <li><a class="dropdown-item" href="{{route('kosmo')}}">Sektori</a></li>
-            <li><a class="dropdown-item" href="{{route('ostruktura')}}">Aktuelni projekti</a></li>
-            <li><a class="dropdown-item" href="{{route('misijaivizija')}}">Biblioteka objavljenih radova</a></li>
+            <li><a class="dropdown-item" href="{{route('oinrc')}}">O INRC</a></li>
+            <li><a class="dropdown-item" href="{{route('sektori')}}">Sektori</a></li>
+            <li><a class="dropdown-item" href="{{route('projekti')}}">Aktuelni projekti</a></li>
+            <li><a class="dropdown-item" href="{{route('biblioteka')}}">Biblioteka objavljenih radova</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

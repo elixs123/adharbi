@@ -16,8 +16,8 @@ Route::get('/historijat', [HomeController::class, 'historijat'])->name('historij
 Route::get('/misijaivizija', [HomeController::class, 'misijaivizija'])->name('misijaivizija');
 Route::get('/ostruktura', [HomeController::class, 'ostruktura'])->name('ostruktura');
 Route::get('/kosmo', [HomeController::class, 'kosmo'])->name('kosmo');
-
 Route::get('/oposlovno', [HomeController::class, 'oposlovno'])->name('oposlovno');
+
 Route::get('/inrc/inrc', [HomeController::class, 'oinrc'])->name('oinrc');
 Route::get('/inrc/sektori', [HomeController::class, 'sektori'])->name('sektori');
 Route::get('/inrc/projekti', [HomeController::class, 'projekti'])->name('projekti');
