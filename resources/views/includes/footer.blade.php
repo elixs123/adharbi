@@ -1,5 +1,5 @@
-<!-- ======= Footer ======= -->
-<footer id="footer">
+
+<footer id="footer" style="margin-top:50px;">
 
 <div class="footer-top">
 

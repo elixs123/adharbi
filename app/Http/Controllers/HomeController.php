@@ -62,4 +62,20 @@ class HomeController extends Controller
   
         return redirect()->back();
     }
+
+    public function oinrc(){
+        return view('inrc.oinrc');
+    }
+
+    public function sektori(){
+        return view('inrc.sektori');
+    }
+
+    public function projekti(){
+        return view('inrc.projekti');
+    }
+
+    public function biblioteka(){
+        return view('inrc.biblioteka');
+    }
 }

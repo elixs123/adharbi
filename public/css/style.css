@@ -12,3 +12,10 @@
   .m-bottom{
     margin-bottom: 60px;
   }
+
+@media only screen and (max-device-width: 480px) {
+  .navbar-collapse{
+    background: #ddd;
+    height: 62vh;
+  }
+}
