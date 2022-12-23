@@ -11,17 +11,18 @@
     <div class="row" data-aos="fade-bottom">
         <div class="col-12 col-lg-2">
             <nav class="nav nav-pills flex-column flex-sm-row justify-content-start sticky-top" style="position: sticky !important;">
-                <a class="flex-sm-fill text-sm-left nav-link active" aria-current="page" href="#">FARMACIJA</a>
+            <a class="flex-sm-fill text-sm-left nav-link active" aria-current="page" href="#">AGROHARBI</a>
+                <a class="flex-sm-fill text-sm-left nav-link" href="#">FARMACIJA</a>
                 <a class="flex-sm-fill text-sm-left nav-link" href="#">GRAĐEVINA</a>
                 <a class="flex-sm-fill text-sm-left nav-link" href="#">HARBILAB</a>
                 <a class="flex-sm-fill text-sm-left nav-link" href="#">PROIZVODNJA</a>
-                <a class="flex-sm-fill text-sm-left nav-link" href="#">TEHNIČKO-TEHNOLOŠKI</a>
+                <a class="flex-sm-fill text-sm-left nav-link" href="#">TEHNIČKO-TEHNO</a>
                 <a class="flex-sm-fill text-sm-left nav-link" href="#">RUDARSTVO</a>
             </nav>
         </div>
         <div class="col-12 col-lg-10">
             <div class="row">
-                <div class="card col-12 col-lg-4 p-0 m-0 text-center">
+                <div class="card col-12 col-lg-3 p-0 m-0 text-center">
                     <div class="card-header pt-2">
                         <h5 class="card-title">AGROHARBI</h5>
                     </div>
@@ -30,7 +31,7 @@
                         <a href="#" class="btn btn-primary">Pogledaj sektor</a>
                     </div>
                 </div>
-                <div class="card col-12 col-lg-4 p-0 m-0 text-center">
+                <div class="card col-12 col-lg-3 p-0 m-0 text-center">
                     <div class="card-header pt-2">
                         <h5 class="card-title">FARMACIJA</h5>
                     </div>
@@ -39,7 +40,7 @@
                         <a href="#" class="btn btn-primary">Pogledaj sektor</a>
                     </div>
                 </div>
-                <div class="card col-12 col-lg-4 p-0 m-0 text-center">
+                <div class="card col-12 col-lg-3 p-0 m-0 text-center">
                     <div class="card-header pt-2">
                         <h5 class="card-title">GRAĐEVINA</h5>
                     </div>
@@ -48,9 +49,7 @@
                         <a href="#" class="btn btn-primary">Pogledaj sektor</a>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="card col-12 col-lg-4 p-0 m-0 text-center">
+                <div class="card col-12 col-lg-3 p-0 m-0 text-center">
                     <div class="card-header pt-2">
                         <h5 class="card-title">HARBILAB</h5>
                     </div>
@@ -59,7 +58,9 @@
                         <a href="#" class="btn btn-primary">Pogledaj sektor</a>
                     </div>
                 </div>
-                <div class="card col-12 col-lg-4 p-0 m-0 text-center">
+            </div>
+            <div class="row">
+                <div class="card col-12 col-lg-3 p-0 m-0 text-center">
                     <div class="card-header pt-2">
                         <h5 class="card-title">PROIZVODNJA</h5>
                     </div>
@@ -68,18 +69,16 @@
                         <a href="#" class="btn btn-primary">Pogledaj sektor</a>
                     </div>
                 </div>
-                <div class="card col-12 col-lg-4 p-0 m-0 text-center">
+                <div class="card col-12 col-lg-3 p-0 m-0 text-center">
                     <div class="card-header pt-2">
-                        <h5 class="card-title">TEHNIČKO-TEHNOLOŠKI</h5>
+                        <h5 class="card-title">TEHNIČKO-TEHNO</h5>
                     </div>
                     <img src="{{asset('img/sektori/LOGO - TEHNIČKO-TEHNOLOŠKI.png')}}" class="card-img-top" alt="{{asset('img/sektori/LOGO - TEHNIČKO-TEHNOLOŠKI.png')}}">
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary">Pogledaj sektor</a>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="card col-12 col-lg-4 p-0 m-0 text-center">
+                <div class="card col-12 col-lg-3 p-0 m-0 text-center">
                     <div class="card-header pt-2">
                         <h5 class="card-title">RUDARSTVO</h5>
                     </div>
@@ -89,6 +88,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
   </div>
