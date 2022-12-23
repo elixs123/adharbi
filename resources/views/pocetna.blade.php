@@ -4,81 +4,31 @@
 <main id="main">
 
 <section id="about" class="about">
-
   <div class="container">
-
-
-
     <div class="section-title" data-aos="fade-up">
-
-      <h2>Nekoliko riječi direktora...</h2>
-
-      
+      <h2>{{ __('home.nekoliko') }}</h2>
     </div>
-
-
-
     <div class="row">
-
       <div class="col-lg-6" data-aos="fade-right">
-
         <div class="image">
-
           <img src="assets/img/Direktor.jpg" style="width:100%; height:50%;"  alt="">
-
         </div>
-
       </div>
-
       <div class="col-lg-6" data-aos="fade-left">
-
-        <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
-
-          <h3></h3>
-
-          <p >
-
-            PD AD HARBI d.o.o. Sarajevo je društveno odgovorna kompanija  koja vec dugi niz godina pomaže rast i razvoj lokalne zajednice sponzorstvom raznih kulturnih, edukacionih, sportskih, vjerskih i drugih manifestacija, te pomaže rad lokalnih udruženja, vjerskih zajednica, sportskih društava itd. 
-          </p>
-<p>Privredno društvo dio svoje društvene odgovornosti iskazuje kroz permanentnu edukaciju uposlenika i stipendiranje srednjoškolaca, studenata, magistranata i doktoranata. </p>
-      
-          <p>
-
-            Stalno je otvoren poziv za prijem kadrova širokog spektra zanimanja, a posebno je potencirana podrška saradnji i upošljavanju naučno-istraživačkih kadrova i inovatora.   
-
-          </p>
-
-<p>
-
-
-Muhamed Harbinja<br>
-Direktor Društva
-
-          </p>
-
-
+        <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 elix-justify">
+          <p>{{ __('home.text_pocetna_1') }}</p>
+          <p>{{ __('home.text_pocetna_2') }}</p>
+          <p>{{ __('home.text_pocetna_3') }}</p>
+          <p>{{ __('home.text_pocetna_4') }}<br>{{ __('home.text_pocetna_5') }}</p>
         </div>
-
       </div>
-
     </div>
-
-
-
   </div>
-
 </section><!-- End About Us Section -->
-
-
-
-<!-- ======= Services Section ======= -->
 
 <section id="services" class="services">
 
   <div class="container">
-
-
-
     <div class="section-title" data-aos="fade-up">
 
       <h2>Rudarstvo</h2>

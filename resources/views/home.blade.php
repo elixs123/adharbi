@@ -163,7 +163,7 @@ section {
 <a href="https://adharbi.mhds.ba/građevinarstvo.html"><img  src="assets/img/građevinarstvo.png" alt="Istraživanje" style=""></a>
 </div>
 <br>
-<a aria-pressed="true" class="btn btn-success btn-sm active" href="{{route('pocetna')}}" role="button" style="width: 200px;">Nekoliko riječi direktora</a></p>
+<a aria-pressed="true" class="btn btn-success btn-sm active" href="{{route('pocetna')}}" role="button" style="width: 200px;">{{ __('onama.saznajvise') }}</a></p>
 </div>
 </div>
 </div>
@@ -194,7 +194,7 @@ section {
 <a href="https://adharbi.mhds.ba/građevinarstvo.html"><img  src="assets/img/građevinarstvo.png" alt="Istraživanje" style=""></a>
 </div>
 <br>
-<a aria-pressed="true" class="btn btn-success btn-sm active" href="{{route('pocetna')}}" role="button" style="width: 200px;">Nekoliko riječi direktora</a></p>
+<a aria-pressed="true" class="btn btn-success btn-sm active" href="{{route('pocetna')}}" role="button" style="width: 200px;">{{ __('onama.saznajvise') }}</a></p>
 </div>
 </div>
 </div>
@@ -225,7 +225,7 @@ section {
 <a href="https://adharbi.mhds.ba/građevinarstvo.html"><img  src="assets/img/građevinarstvo.png" alt="Istraživanje" style=""></a>
 </div>
 <br>
-<a aria-pressed="true" class="btn btn-success btn-sm active" href="{{route('pocetna')}}" role="button" style="width: 200px;">Nekoliko riječi direktora</a></p>
+<a aria-pressed="true" class="btn btn-success btn-sm active" href="{{route('pocetna')}}" role="button" style="width: 200px;">{{ __('onama.saznajvise') }}</a></p>
 </div>
 </div>
 </div>

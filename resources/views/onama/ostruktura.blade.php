@@ -2,14 +2,18 @@
 
 @section('content')
 <main id="main">
-    <div class="container">
+    <div class="container elix-justify">
         <div class="section-title m-0 p-0" data-aos="fade-up">
             <h1>{{ __('onama.ostruktura') }}</h1>
         </div>
         <div class="row">
             <div class="col-lg-12" data-aos="fade-right" style="padding: 0;margin:0">
                 <div class="image">
-                    <img src="{{asset('img/organizacionastruktura.png')}}" style="width:100%;"  alt="{{asset('img/organizacionastruktura.png')}}">
+                    @if(Session::get('language') == 'ba')
+                        <img src="{{asset('img/organizacionastruktura.png')}}" style="width:100%;"  alt="{{asset('img/organizacionastruktura.png')}}">
+                    @else
+                        <img src="{{asset('img/organizacionastrukturaen.png')}}" style="width:100%;"  alt="{{asset('img/organizacionastrukturaen.png')}}">
+                    @endif
                 </div>
             </div>
         </div>

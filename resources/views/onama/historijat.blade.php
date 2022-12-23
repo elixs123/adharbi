@@ -2,7 +2,7 @@
 
 @section('content')
 <main id="main">
-    <div class="container">
+    <div class="container elix-justify">
         <div class="section-title" data-aos="fade-up">
             <h1>{{ __('onama.historijat') }}<h1>
         </div>

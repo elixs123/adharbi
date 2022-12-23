@@ -23,6 +23,9 @@ Route::get('/inrc/sektori', [HomeController::class, 'sektori'])->name('sektori')
 Route::get('/inrc/projekti', [HomeController::class, 'projekti'])->name('projekti');
 Route::get('/inrc/biblioteka', [HomeController::class, 'biblioteka'])->name('biblioteka');
 
+Route::get('/sektori/rudarstvo', [HomeController::class, 'rudarstvo'])->name('rudarstvo');
+Route::get('/sektori/tehnicko-tehnoloski', [HomeController::class, 'tehnicko'])->name('tehnicko-tehnoloski');
+
 Route::get('languge/{lang}', [HomeController::class, 'changeLanguge'])->name('changeLanguge');
 
 Route::prefix('admin')->group(function (){

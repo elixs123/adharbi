@@ -31,7 +31,7 @@ class HomeController extends Controller
     }
 
     public function gallery(){
-        $gallerys = Gallery::all();
+        $gallerys = Gallery::paginate(6);
 
         return view('gallery', ['gallerys' => $gallerys]);
     }
@@ -77,5 +77,13 @@ class HomeController extends Controller
 
     public function biblioteka(){
         return view('inrc.biblioteka');
+    }
+
+    public function rudarstvo(){
+        return view('sektori.rudarstvo');
+    }
+
+    public function tehnicko(){
+        return view('sektori.tehnicko-tehnoloski');
     }
 }

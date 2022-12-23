@@ -18,11 +18,11 @@
     background: #fff;
     box-shadow: 0 4px 10px -3px hsl(0deg 0% 75% / 50%);">
   <div class="container">
-    <a class="navbar-brand" href="#"><img src="{{asset('img/logo.png')}}" alt="logo" style="width:120px; height:100px;padding: 12px;"></a>
+    <a class="navbar-brand" href="{{route('home')}}" style="padding: 0;padding-top: 20px;"><img src="{{asset('img/logo.png')}}" alt="logo" style="width:120px; height:100px;padding: 12px;"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 9% !important;">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{route('home')}}">{{ __('nav.pocetna') }}</a>
@@ -32,12 +32,12 @@
             {{ __('nav.onama') }}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('historijat')}}">Historijat</a></li>
-            <li><a class="dropdown-item" href="{{route('kosmo')}}">Ko smo - Djelatnost firme</a></li>
-            <li><a class="dropdown-item" href="{{route('misijaivizija')}}">Misija vizija</a></li>
-            <li><a class="dropdown-item" href="{{route('ostruktura')}}">Organizaciona struktura</a></li>
-            <li><a class="dropdown-item" href="{{route('oposlovno')}}">Ostvarena poslovno naučna saradnja</a></li>
-            <li><a class="dropdown-item" href="{{route('gallery')}}">Galerija</a></li>
+            <li><a class="dropdown-item" href="{{route('historijat')}}">{{ __('nav.onama_historijat') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('kosmo')}}">{{ __('nav.onama_kosmo') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('misijaivizija')}}">{{ __('nav.onama_misija') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('ostruktura')}}">{{ __('nav.onama_organizaciona') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('oposlovno')}}">{{ __('nav.onama_ostvarena') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('gallery')}}">{{ __('nav.galerija') }}</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -49,7 +49,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{route('oinrc')}}">O INRC</a></li>
-            <li><a class="dropdown-item" href="{{route('sektori')}}">Sektori</a></li>
+            <li><a class="dropdown-item" href="{{route('sektori')}}">SEKTORI</a></li>
             <li><a class="dropdown-item" href="{{route('projekti')}}">Aktuelni projekti</a></li>
             <li><a class="dropdown-item" href="{{route('biblioteka')}}">Biblioteka objavljenih radova</a></li>
           </ul>
