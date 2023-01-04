@@ -22,7 +22,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 9% !important;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 13% !important;">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{route('home')}}">{{ __('nav.pocetna') }}</a>
@@ -59,13 +59,13 @@
           {{ __('nav.sektori') }}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('historijat')}}">Rudarstvo</a></li>
-            <li><a class="dropdown-item" href="{{route('kosmo')}}">Tehničko-Tehnološki</a></li>
-            <li><a class="dropdown-item" href="{{route('ostruktura')}}">Agroharbi</a></li>
-            <li><a class="dropdown-item" href="{{route('misijaivizija')}}">Farmacija</a></li>
-            <li><a class="dropdown-item" href="{{route('misijaivizija')}}">Harbilab</a></li>
-            <li><a class="dropdown-item" href="{{route('misijaivizija')}}">Proizvodnja</a></li>
-            <li><a class="dropdown-item" href="{{route('misijaivizija')}}">Građevina</a></li>
+            <li><a class="dropdown-item" href="{{route('rudarstvo')}}">Rudarstvo</a></li>
+            <li><a class="dropdown-item" href="{{route('tehnicko-tehnoloski')}}">Tehničko-Tehnološki</a></li>
+            <li><a class="dropdown-item" href="{{route('agroharbi')}}">Agroharbi</a></li>
+            <li><a class="dropdown-item" href="{{route('farmacija')}}">Farmacija</a></li>
+            <li><a class="dropdown-item" href="{{route('harbilab')}}">Harbilab</a></li>
+            <li><a class="dropdown-item" href="{{route('proizvodnja')}}">Proizvodnja</a></li>
+            <li><a class="dropdown-item" href="{{route('gradjevina')}}">Građevina</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -82,7 +82,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link">{{ __('nav.karijera') }}</a>
+          <a href="{{route('prijavazaposao')}}" class="nav-link">{{ __('nav.karijera') }}</a>
         </li>
         <li class="nav-item">
           <a class="nav-link">{{ __('nav.kontakt') }}</a>

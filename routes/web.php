@@ -25,6 +25,12 @@ Route::get('/inrc/biblioteka', [HomeController::class, 'biblioteka'])->name('bib
 
 Route::get('/sektori/rudarstvo', [HomeController::class, 'rudarstvo'])->name('rudarstvo');
 Route::get('/sektori/tehnicko-tehnoloski', [HomeController::class, 'tehnicko'])->name('tehnicko-tehnoloski');
+Route::get('/sektori/agroharbi', [HomeController::class, 'agroharbi'])->name('agroharbi');
+Route::get('/sektori/farmacija', [HomeController::class, 'farmacija'])->name('farmacija');
+Route::get('/sektori/harbilab', [HomeController::class, 'harbilab'])->name('harbilab');
+Route::get('/sektori/proizvodnja', [HomeController::class, 'proizvodnja'])->name('proizvodnja');
+Route::get('/sektori/gradjevina', [HomeController::class, 'gradjevina'])->name('gradjevina');
+Route::get('/prijavazaposao', [HomeController::class, 'prijavazaposao'])->name('prijavazaposao');
 
 Route::get('languge/{lang}', [HomeController::class, 'changeLanguge'])->name('changeLanguge');
 

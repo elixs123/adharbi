@@ -86,4 +86,28 @@ class HomeController extends Controller
     public function tehnicko(){
         return view('sektori.tehnicko-tehnoloski');
     }
+
+    public function agroharbi(){
+        return view('sektori.agroharbi');
+    }
+
+    public function farmacija(){
+        return view('sektori.farmacija');
+    }
+
+    public function harbilab(){
+        return view('sektori.harbilab');
+    }
+
+    public function proizvodnja(){
+        return view('sektori.proizvodnja');
+    }
+
+    public function gradjevina(){
+        return view('sektori.gradjevina');
+    }
+
+    public function prijavazaposao(){
+        return view('prijavazaposao');
+    }
 }
