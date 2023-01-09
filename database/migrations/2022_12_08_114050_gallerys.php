@@ -26,6 +26,6 @@ class Gallerys extends Migration
      */
     public function down()
     {
-        Schema::dropIfExits('gallerys');
+        Schema::dropIfExists('gallerys');
     }
 }

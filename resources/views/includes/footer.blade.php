@@ -33,7 +33,7 @@
 
 <div class="container footer-bottom clearfix">
   <div class="copyright">
-    &copy; Copyright <strong><span></span></strong>. All Rights Reserved
+    &copy; Copyright 2023 AD HARBI <strong><span></span></strong>. All Rights Reserved. Dizajn i programiranje <a href="https://mhds.ba">mhds.ba</a>
   </div>
 </div>
 </footer><!-- End Footer -->

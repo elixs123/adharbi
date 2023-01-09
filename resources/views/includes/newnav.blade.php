@@ -81,8 +81,12 @@
             <li><a class="dropdown-item" href="{{route('ostruktura')}}">Zahvalnice</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a href="{{route('prijavazaposao')}}" class="nav-link">{{ __('nav.karijera') }}</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ __('nav.karijera') }}</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{route('prijavazaposao')}}">Prijava za posao</a></li>
+            <li><a class="dropdown-item" href="{{route('openjobs')}}">Otvorene pozicije</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link">{{ __('nav.kontakt') }}</a>

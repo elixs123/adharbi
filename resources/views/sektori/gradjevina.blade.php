@@ -14,7 +14,7 @@
                 <a class="flex-sm-fill text-sm-left nav-link text-black" href="#">FARMACIJA</a>
                 <a class="flex-sm-fill text-sm-left nav-link text-black harbi-active" href="#">GRAĐEVINA</a>
                 <a class="flex-sm-fill text-sm-left nav-link text-black" href="#">HARBILAB</a>
-                <a class="flex-sm-fill text-sm-left nav-link text-black" href="#">PROIZVODNJA</a>
+                <a class="flex-sm-fill text-sm-left nav-link text-black" haref="#">PROIZVODNJA</a>
                 <a class="flex-sm-fill text-sm-left nav-link text-black" href="#">TEHNIČKO-TEHNO</a>
                 <a class="flex-sm-fill text-sm-left nav-link text-black" href="#">RUDARSTVO</a>
             </nav>

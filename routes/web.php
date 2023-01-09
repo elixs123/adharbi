@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PosaoController;
 
 Auth::routes();
 
@@ -30,7 +31,16 @@ Route::get('/sektori/farmacija', [HomeController::class, 'farmacija'])->name('fa
 Route::get('/sektori/harbilab', [HomeController::class, 'harbilab'])->name('harbilab');
 Route::get('/sektori/proizvodnja', [HomeController::class, 'proizvodnja'])->name('proizvodnja');
 Route::get('/sektori/gradjevina', [HomeController::class, 'gradjevina'])->name('gradjevina');
-Route::get('/prijavazaposao', [HomeController::class, 'prijavazaposao'])->name('prijavazaposao');
+
+Route::get('/prijavazaposao', [PosaoController::class, 'index'])->name('prijavazaposao');
+Route::post('/prijavazaposao', [PosaoController::class, 'save']);
+
+
+Route::get('/uspjesnaprijava', [PosaoController::class, 'uspjesnaprijava'])->name('uspjesnaprijava');
+
+Route::get('/otvorenepozicije', [PosaoController::class, 'openjobs'])->name('openjobs');
+
+Route::get('/otvorenepozicije/{id}', [PosaoController::class, 'openJobsDetails'])->name('openjobsdetails');
 
 Route::get('languge/{lang}', [HomeController::class, 'changeLanguge'])->name('changeLanguge');
 
@@ -51,6 +61,19 @@ Route::prefix('admin')->group(function (){
         Route::get('gallery', [AdminController::class, 'gallery'])->name('adminGallery');
         Route::get('adminAddGallery', [AdminController::class, 'addGallery'])->name('adminAddGallery');
         Route::post('adminAddGallery', [AdminController::class, 'addGalleryPost']);
+
+        Route::get('posao', [AdminController::class, 'posao'])->name('posao');
+        Route::get('posao/{id}', [AdminController::class, 'posaoDetails'])->name('posaoDetails');
+
+        Route::get('addjobs', [AdminController::class, 'addJobs'])->name('addjobs');
+        Route::post('addjobs', [AdminController::class, 'addNewJob']);
+
+        Route::get('alljobs', [AdminController::class, 'allJobs'])->name('alljobs');
+        Route::post('alljobs', [AdminController::class, 'updateAllJobs']);
+        Route::delete('alljobs', [AdminController::class, 'deleteJob']);
+
+        Route::get('alljobs/edit/{id}', [AdminController::class, 'editJob'])->name('editjob');
+        Route::post('alljobs/edit/{id}', [AdminController::class, 'updateJob']);
     });
 });
 

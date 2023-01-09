@@ -8,6 +8,8 @@ use App\Models\Sub_Pages;
 use App\Models\Sub_Pages_Nav;
 use App\Models\News;
 use App\Models\Gallery;
+use App\Models\Job;
+use App\Models\Alljob;
 use Validator;
 
 class AdminController extends Controller
@@ -183,5 +185,106 @@ class AdminController extends Controller
         $gallery->save();
 
         return redirect()->back()->with('message', 'Dodali ste novu sliku u galeriju');
+    }
+
+    public function posao(){
+        $jobs = Job::all();
+
+        return view('admin.posao', ['jobs' => $jobs]);
+    }
+
+    public function posaoDetails($id){
+        $job = Job::where('id', $id)->firstOrFail();
+
+        return view('admin.posaodetails', ['job' => $job]);
+    }
+
+    public function addJobs(){
+        return view('admin.addjobs');
+    }
+    public function addNewJob(Request $request){
+        $validation = $request->validate([
+            'img' => 'required',
+            'name' => 'required',
+            'description' => 'required',
+            'date' => 'required'
+        ],
+        [
+            'img.required' => 'Polje slika je obavezno',
+            'name.required' => 'Polje naziv je obavezno',
+            'description.required' => 'Polje opis je obavezno',
+            'date.required' => 'Polje date je obavezno',
+        ]);
+
+        $image = $request->file('img');
+
+        $name = $image->getClientOriginalName();
+        $destinationPath = public_path('/img/jobs');
+        $image->move($destinationPath, $name);
+
+        $alljob =  new Alljob;
+        $alljob->name = $request->input('name');
+        $alljob->img = $name;
+        $alljob->opis = $request->input('description');
+        $alljob->date = $request->input('date');
+        
+        $alljob->save();
+
+        return redirect()->back()->with('message', 'Uspjesno ste dodali novu poziciju');
+    }
+
+    public function allJobs(){
+        $alljobs = Alljob::all();
+
+        return view('admin.alljobs', ['alljobs' => $alljobs]);
+    }
+
+    public function updateAllJobs(Request $request){
+        $job = Alljob::find($request->input('id'));
+
+        if($job->date < date('Y-m-d')){
+            return redirect()->back()->with('danger', 'Ne mozete aktivirati poziciju, datum je manji od trenutnog datuma. Morate prvo izmjeniti datum klikom na dugme "Izmjeni".');
+        }
+        $job->active = $request->input('active');
+
+        $job->save();
+
+        return redirect()->back()->with('message', 'Uspjesno ste izmjenili poziciju');
+    }
+    
+    public function deleteJob(Request $request){
+        $job = Alljob::find($request->input('id'));
+
+        $job->delete();
+
+        return redirect()->back()->with('message', 'Uspjesno ste izbrisali poziciju');
+    }
+
+    public function editJob($id){
+        $job = Alljob::find($id);
+
+        return view('admin.editjob', ['job' => $job]);
+    }
+
+    public function updateJob($id, Request $request){
+        $job = Alljob::find($id);
+
+        if($request->has('img')){
+            $image = $request->file('img');
+
+            $name = $image->getClientOriginalName();
+            $destinationPath = public_path('/img/jobs');
+            $image->move($destinationPath, $name);
+
+            $job->img = $name;
+        }
+
+        $job->name = $request->input('name');
+        $job->opis = $request->input('description');
+        $job->date = $request->input('date');
+
+        $job->save();
+
+        return redirect()->back()->with('message', 'Uspjesno ste izmjenili poziciju'); 
     }
 }
