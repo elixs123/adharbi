@@ -2,17 +2,14 @@
   <div class="top-nav" style="display: flow-root; padding: 5px; border-bottom: 1px #eee solid;background: #f4f4f4;text-transform: uppercase;">
     <div class="container">
     <div class="top-nav-contents" style="float: right;">
-      <a href="{{route('changeLanguge', ['lang' => 'ba'])}}" style="color: #A2A2A2;" class="m-2 active"><i class="fa-solid fa-flag"></i> BA</a>
+      <a href="{{route('changeLanguge', ['lang' => 'ba'])}}" style="color: #A2A2A2;text-decoration:none;" class="m-2 active"><span class="fi fi-ba fis"></span> BA</a>
 
-      <a href="{{route('changeLanguge', ['lang' => 'en'])}}" style="color: #A2A2A2;"><i class="fa-solid fa-flag"></i> ENG</a>
+      <a href="{{route('changeLanguge', ['lang' => 'en'])}}" style="color: #A2A2A2;text-decoration:none;"><span class="fi fi-gb fis"></span> ENG</a>
     </div>
     </div>
    
   </div>
-<nav class="navbar navbar-expand-lg bg-light" style="height: 142px;
-    padding: 0;
-    height: 90px;
-    transition: all 0.5s;
+<nav class="navbar navbar-expand-lg bg-light" style="height: 142px;padding: 0;height: 90px;transition: all 0.5s;
     z-index: 997;
     transition: all 0.5s;
     background: #fff;
@@ -39,6 +36,9 @@
             <li><a class="dropdown-item" href="{{route('oposlovno')}}">{{ __('nav.onama_ostvarena') }}</a></li>
             <li><a class="dropdown-item" href="{{route('gallery')}}">{{ __('nav.galerija') }}</a></li>
           </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="{{route('opirofiltu')}}">{{ __('nav.opirofiltu') }}</a>
         </li>
         <li class="nav-item">
           <a class="nav-link"  href="{{route('news')}}">{{ __('nav.novosti') }}</a>
@@ -89,7 +89,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link">{{ __('nav.kontakt') }}</a>
+          <a class="nav-link" href="{{route('contact')}}">{{ __('nav.kontakt') }}</a>
         </li>
       </ul>
     </div>

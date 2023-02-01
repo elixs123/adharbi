@@ -232,9 +232,22 @@
 
                 <!-- Main Container -->
                 <div id="main-container">
-                    
+                <header class="navbar navbar-default">
+                        <!-- Left Header Navigation -->
+                        <ul class="nav navbar-nav-custom">
+                            <!-- Main Sidebar Toggle Button -->
+                            <li>
+                                <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar');this.blur();">
+                                    <i class="fa fa-bars fa-fw"></i>
+                                </a>
+                            </li>
+                            <!-- END Main Sidebar Toggle Button -->
+                        </ul>
+                        <!-- END Right Header Navigation -->
+                    </header>
+                    <!-- END Header -
 
-                    <!-- Page content -->
+                    <!- Page content -->
                    
                     @yield('adminContent')
 

@@ -22,6 +22,34 @@
                                  <span class="help-block">{{ $message }}</span>
                                 @enderror
                             </div>
+                            
+                        </div>
+                        <div class="form-group @error('year') has-error @enderror">
+                            <label class="col-md-3 control-label" for="year">Godina</label>
+                            <div class="col-md-3">
+                                <input type="text" id="year" name="year" class="form-control" placeholder="Upišite godinu">
+                                @error('year')
+                                 <span class="help-block">{{ $message }}</span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group @error('ba') has-error @enderror">
+                            <label class="col-md-3 control-label" for="ba">Bosanski text</label>
+                            <div class="col-md-8">
+                                <input type="text" id="ba" name="ba" class="form-control" placeholder="Upišite bosanski text">
+                                @error('ba')
+                                 <span class="help-block">{{ $message }}</span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group @error('en') has-error @enderror">
+                            <label class="col-md-3 control-label" for="en">Engleski text</label>
+                            <div class="col-md-8">
+                                <input type="text" id="en" name="en" class="form-control" placeholder="Upišite engleski text">
+                                @error('en')
+                                 <span class="help-block">{{ $message }}</span>
+                                @enderror
+                            </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-9 col-md-offset-3">

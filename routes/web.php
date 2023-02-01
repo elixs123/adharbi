@@ -13,6 +13,9 @@ Route::get('/novosti', [HomeController::class, 'news'])->name('news');
 Route::get('/novosti/{id}', [HomeController::class, 'newsDetails'])->name('newsDetails');
 Route::get('/galerija', [HomeController::class, 'gallery'])->name('gallery');
 
+Route::get('/kontakt', [HomeController::class, 'contact'])->name('contact');
+Route::post('/kontakt', [HomeController::class, 'cotactSendEmail']);
+
 Route::get('/historijat', [HomeController::class, 'historijat'])->name('historijat');
 Route::get('/misijaivizija', [HomeController::class, 'misijaivizija'])->name('misijaivizija');
 Route::get('/ostruktura', [HomeController::class, 'ostruktura'])->name('ostruktura');
@@ -41,6 +44,8 @@ Route::get('/uspjesnaprijava', [PosaoController::class, 'uspjesnaprijava'])->nam
 Route::get('/otvorenepozicije', [PosaoController::class, 'openjobs'])->name('openjobs');
 
 Route::get('/otvorenepozicije/{id}', [PosaoController::class, 'openJobsDetails'])->name('openjobsdetails');
+
+Route::get('/opirofiltu', [HomeController::class, 'opirofiltu'])->name('opirofiltu');
 
 Route::get('languge/{lang}', [HomeController::class, 'changeLanguge'])->name('changeLanguge');
 

@@ -16,6 +16,9 @@ class Gallerys extends Migration
         Schema::create('gallerys', function(Blueprint $table){
             $table->id();
             $table->string('img');
+            $table->string('year');
+            $table->string('ba')->nullable();
+            $table->string('en')->nullable();
         });
     }
 

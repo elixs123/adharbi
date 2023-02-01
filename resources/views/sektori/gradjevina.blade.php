@@ -6,67 +6,41 @@
   <div class="container">
     <div class="section-title" data-aos="fade-up">
         <h1>GRAĐEVINA</h1>
+        <img src="{{asset('img/sektoripage/gradjevina/gradjevina.png')}}" class="rounded mx-auto d-block" style="width:auto;height:400px;" alt="{{asset('img/sektoripage/gradjevina/gradjevina.png')}}">
     </div>
     <div class="row" data-aos="fade-bottom">
-        <div class="col-12 col-lg-2">
-            <nav class="nav nav-pills flex-column flex-sm-row justify-content-start" style="position: sticky !important;">
-                <a class="flex-sm-fill text-sm-left nav-link text-black" href="#">AGROHARBI</a>
-                <a class="flex-sm-fill text-sm-left nav-link text-black" href="#">FARMACIJA</a>
-                <a class="flex-sm-fill text-sm-left nav-link text-black harbi-active" href="#">GRAĐEVINA</a>
-                <a class="flex-sm-fill text-sm-left nav-link text-black" href="#">HARBILAB</a>
-                <a class="flex-sm-fill text-sm-left nav-link text-black" haref="#">PROIZVODNJA</a>
-                <a class="flex-sm-fill text-sm-left nav-link text-black" href="#">TEHNIČKO-TEHNO</a>
-                <a class="flex-sm-fill text-sm-left nav-link text-black" href="#">RUDARSTVO</a>
-            </nav>
-        </div>
+        @include('includes.sektori')
         <div class="col-12 col-lg-10">
             <div class="row">
             
         </div>
         <div class="row">
-            <div class="col-lg-6 order-2 order-lg-1">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
-                <p style="color:black; font-size:16px;" class="elix-justify">Djelatnost sektora građevinarstva obuhvata sve građevinske poslove na projektovanju i izgradnji novih objekata, kao i rekonstrukciji i održavanju postojećih, a koji se nalaze na lokacijama koje koristi PD AD HARBI d.o.o. Sarajevo.</p>
-            </div>
-            </div>
-            <div class="image col-lg-6 order-1 order-lg-2"  data-aos="fade-left" data-aos-delay="100"><a href="{{asset('img/sektoripage/gradjevina/gradjevina.png')}}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img style="width: 100%; height:auto;" src="{{asset('img/sektoripage/gradjevina/gradjevina.png')}}"></img></a>
-            </div>
-        </div>
-        <!--DRUGI DIO-->
-        <div class="row mt-5">
-            <div class="col-lg-12">
-                <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="50000">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active sektor">
-                            <img src="{{asset('img/sektoripage/gradjevina/1A/1.jpg')}}" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item sektor">
-                            <img src="{{asset('img/sektoripage/gradjevina/1A/2.jpg')}}" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item active sektor">
-                            <img src="{{asset('img/sektoripage/gradjevina/2A/1.jpg')}}" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item sektor">
-                            <img src="{{asset('img/sektoripage/gradjevina/2A/2.jpg')}}" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item active sektor">
-                            <img src="{{asset('img/sektoripage/gradjevina/3A/1.jpg')}}" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item sektor">
-                            <img src="{{asset('img/sektoripage/gradjevina/3A/2.jpg')}}" class="d-block w-100">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+            <div class="col-lg-12 order-2 order-lg-1">
+                <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
+                    <h4>SEKTOR GRAĐEVINA</h4>
+                    <p style="color:black; font-size:16px;" class="elix-justify">Djelatnost sektora građevinarstva obuhvata sve građevinske poslove na projektovanju i izgradnji novih objekata, kao i rekonstrukciji i održavanju postojećih, a koji se nalaze na lokacijama koje koristi PD AD HARBI d.o.o. Sarajevo.</p>
                 </div>
             </div>
+                <div class="image col-lg-6 order-1 order-lg-2"  data-aos="fade-left" data-aos-delay="100">
+                    <a href="{{asset('img/sektoripage/gradjevina/1A/1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img style="width: 100%; height:400px;" src="{{asset('img/sektoripage/gradjevina/1A/1.jpg')}}"></img></a>
+                </div>
+                <div class="image col-lg-6 order-1 order-lg-2"  data-aos="fade-left" data-aos-delay="100">
+                    <a href="{{asset('img/sektoripage/gradjevina/1A/2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img style="width: 100%; height:400px;" src="{{asset('img/sektoripage/gradjevina/1A/2.jpg')}}"></img></a>
+                </div>
+                <div class="image col-lg-6 order-1 order-lg-2"  data-aos="fade-left" data-aos-delay="100">
+                    <a href="{{asset('img/sektoripage/gradjevina/2A/1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img style="width: 100%; height:400px;" src="{{asset('img/sektoripage/gradjevina/2A/1.jpg')}}"></img></a>
+                </div>
+                <div class="image col-lg-6 order-1 order-lg-2"  data-aos="fade-left" data-aos-delay="100">
+                    <a href="{{asset('img/sektoripage/gradjevina/2A/2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img style="width: 100%; height:400px;" src="{{asset('img/sektoripage/gradjevina/2A/2.jpg')}}"></img></a>
+                </div>
+                <div class="image col-lg-6 order-1 order-lg-2"  data-aos="fade-left" data-aos-delay="100">
+                    <a href="{{asset('img/sektoripage/gradjevina/3A/1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img style="width: 100%; height:400px;" src="{{asset('img/sektoripage/gradjevina/3A/1.jpg')}}"></img></a>
+                </div>
+                <div class="image col-lg-6 order-1 order-lg-2"  data-aos="fade-left" data-aos-delay="100">
+                    <a href="{{asset('img/sektoripage/gradjevina/3A/2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox"><img style="width: 100%; height:400px;" src="{{asset('img/sektoripage/gradjevina/3A/2.jpg')}}"></img></a>
+                </div>
         </div>
+
         </div>
     </div>
   </div>

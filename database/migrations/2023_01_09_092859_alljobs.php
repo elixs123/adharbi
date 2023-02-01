@@ -17,7 +17,7 @@ class Alljobs extends Migration
             $table->id();
             $table->string('name');
             $table->string('img');
-            $table->string('opis');
+            $table->longText('opis');
             $table->date('date');
             $table->boolean('active')->default(1);
             $table->timestamps();

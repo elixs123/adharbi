@@ -2,7 +2,7 @@
   <div class="top-nav" style="display: flow-root; padding: 5px; border-bottom: 1px #eee solid;background: #f4f4f4;text-transform: uppercase;">
     <div class="container">
     <div class="top-nav-contents" style="float: right;">
-      <a href="{{route('changeLanguge', ['lang' => 'ba'])}}" style="color: #A2A2A2;" class="m-2 active"><i class="fa-solid fa-flag"></i> BA</a>
+     <a href="{{route('changeLanguge', ['lang' => 'ba'])}}" style="color: #A2A2A2;" class="m-2 active"><i class="fa-solid fa-flag"></i> BA123</a>
 
       <a href="{{route('changeLanguge', ['lang' => 'en'])}}" style="color: #A2A2A2;"><i class="fa-solid fa-flag"></i> ENG</a>
     </div>

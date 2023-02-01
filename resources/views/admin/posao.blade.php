@@ -65,7 +65,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td colspan="6"><h3 class="text-center">Nema prijavljenihaa kandidata</h3></td>
+                        <td colspan="6"><h3 class="text-center">Nema prijavljenih kandidata</h3></td>
                     </tr>
                     @endforelse
                 </tbody>

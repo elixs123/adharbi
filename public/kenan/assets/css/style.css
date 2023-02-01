@@ -856,7 +856,7 @@ section {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.portfolio .portfolio-wrap::before {
+/* .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(21, 21, 21, 0.6);
   position: absolute;
@@ -867,7 +867,7 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
-}
+} */
 
 .portfolio .portfolio-wrap .portfolio-info {
   opacity: 0;
@@ -885,7 +885,7 @@ section {
   align-items: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::before {
+/* .portfolio .portfolio-wrap .portfolio-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -911,7 +911,7 @@ section {
   border-right: 3px solid #fff;
   transition: all 0.5s ease 0s;
   z-index: 9994;
-}
+} */
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;

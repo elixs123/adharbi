@@ -9,10 +9,10 @@
         <div class="row">
             <div class="col-lg-12" data-aos="fade-right" style="padding: 0;margin:0">
                 <div class="image">
-                    @if(Session::get('language') == 'ba')
-                        <img src="{{asset('img/organizacionastruktura.png')}}" style="width:100%;"  alt="{{asset('img/organizacionastruktura.png')}}">
-                    @else
+                    @if(App::islocale('en'))
                         <img src="{{asset('img/organizacionastrukturaen.png')}}" style="width:100%;"  alt="{{asset('img/organizacionastrukturaen.png')}}">
+                    @else
+                        <img src="{{asset('img/organizacionastruktura.png')}}" style="width:100%;"  alt="{{asset('img/organizacionastruktura.png')}}">
                     @endif
                 </div>
             </div>

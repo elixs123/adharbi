@@ -15,9 +15,9 @@ use Validator;
 class AdminController extends Controller
 {
     public function index(){
-        $sub_page = Sub_Pages::where('id', 1)->get();
+        $jobs = Job::all();
 
-        return view('admin.home', ["sub_page" => $sub_page]);
+        return view('admin.posao', ['jobs' => $jobs]);
     }
 
     public function news(){
@@ -167,10 +167,12 @@ class AdminController extends Controller
 
     public function addGalleryPost(Request $request){
         $validation = $request->validate([
-            'img' => 'required'
+            'img' => 'required',
+            'year' => 'required'
         ],
         [
-            'img.required' => 'Polje slika je obavezno'
+            'img.required' => 'Polje slika je obavezno',
+            'year.required' => 'Polje godina je obavezno'
         ]);
 
         $image = $request->file('img');
@@ -181,6 +183,9 @@ class AdminController extends Controller
 
         $gallery =  new Gallery;
         $gallery->img = $name;
+        $gallery->year = $request->input('year');
+        $gallery->ba = $request->input('ba');
+        $gallery->en = $request->input('en');
         
         $gallery->save();
 
@@ -200,7 +205,7 @@ class AdminController extends Controller
     }
 
     public function addJobs(){
-        return view('admin.addjobs');
+        return view('admin.addJobs');
     }
     public function addNewJob(Request $request){
         $validation = $request->validate([

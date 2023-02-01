@@ -7,9 +7,14 @@ use App\Models\Pages;
 use App\Models\Sub_Pages;
 use App\Models\News;
 use App\Models\Gallery;
+use Mail;
 
 class HomeController extends Controller
 {
+    private $email;
+    private $subject;
+    private $body;
+
     public function index(){
         return view('home');
     }
@@ -30,10 +35,16 @@ class HomeController extends Controller
         return view('newsDetails', ['new' => $new]);
     }
 
-    public function gallery(){
-        $gallerys = Gallery::paginate(6);
+    public function gallery(Request $request){
+        $years = Gallery::all()->unique('year');
 
-        return view('gallery', ['gallerys' => $gallerys]);
+        if($request->has('godina')){
+            $gallerys = Gallery::where('year', $request->input('godina'))->paginate(6);
+        }else{
+            $gallerys = Gallery::where('year', '2017')->paginate(6);
+        }
+
+        return view('gallery', ['gallerys' => $gallerys, 'years' => $years]);
     }
 
     public function historijat(){
@@ -109,5 +120,30 @@ class HomeController extends Controller
 
     public function prijavazaposao(){
         return view('prijavazaposao');
+    }
+
+    public function opirofiltu(){
+        return view('opirofiltu');
+    }
+
+    public function contact(){
+        return view('contact');
+    }
+
+    public function cotactSendEmail(Request $request){
+        $data = array('name'=>$request->input('name'));
+
+        $this->subject = $request->input('subject');
+        $this->email = $request->input('email');
+        $this->body = $request->input('message');
+   
+        Mail::send([], $data, function($message) {
+            $message->to($this->email, 'Tutorials Point')
+            ->subject($this->subject)
+            ->setBody($this->body);
+            $message->from('Business.Intelligence@pennyplus.com');
+        });
+
+        return redirect()->back()->with('message', 'Uspješno ste poslali e-mail');
     }
 }

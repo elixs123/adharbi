@@ -2,7 +2,7 @@
 
 return [
     'saznajvise' => 'Saznaj više',
-    'historijat' => 'Historijat',
+    'historijat' => 'HISTORIJAT',
     'text_historijat_1' => 'Privredno društvo AD Harbi d.o.o. Sarajevo osnovano je 13.05.1981. godine, a registrovano kao obrtnička djelatnost građevinarstvo u Goraždu. Firma se aktivno bavila građevinarstvom (rekonstrukcija postojećih i izgradnja novih građevinskih objekata).',
     'text_historijat_2' => 'Privredno društvo dio svoje društvene odgovornosti iskazuje kroz permanentnu edukaciju uposlenika i stipendiranje srednjoškolaca, studenata, magistranata i doktoranata.',
     'text_historijat_3' => 'U našoj bogatoj građevinskoj karijeri izgrađen je i rekonstruisan veliki broj objekata, a samo neki od njih su: rekonstrukcija zgrade OHR-a u Sarajevu, zgrada Vlade (zajedničkih instutucija) Sarajevo, Ambasade Države Libije u Sarajevu, Austrijsku Ambasadu u Sarajevu, Njemačku Ambasadu u Sarajevu, Hotel “Saraj” u Sarajevu, Stomatološki Fakultet Sarajevo, DIF (Fakultet za sport) Sarajevo, firma Akova Impex d.o.o., zgrada studentskih domova, te izgradanja mnogih privatnih stambenih objekata.',
@@ -28,7 +28,7 @@ return [
     'text_onama_7' => 'Geološka istraživanja i rudarski radovi na lokaciji nalazišta kao i tehnološka ispitivanja kvaliteta rude pokazuju da se na užoj lokaciji nalaze velike zalihe kvalitetne rude, jedinstvene na prostoru Europe (utvrđene geološke rezerve 38,4 miliona tona).',
     'text_onama_8' => 'U toku su pripreme za uspostavljanje novih i savremenih tehnologija i tehnoloških postupaka kao i odabir opreme sa kojom bi se postigli najbolji rezultati eksploatacije i prerade rude u gotove proizvode.',
     'text_onama_9' => 'Kompanija AD HARBI d.o.o. trenutno razvija 70 + projekata iz raznih industrijskih grana baziranih na pirofilitnom škriljcu i na pirofilitnim kompozitima.',
-    'oposlovno' => 'LISTA INSTITUCIJA I KOMPANIJA',
+    'oposlovno' => 'OSTVARENA POSLOVNO NAUČNA SARADNJA',
     'oposlovno_text_1' => 'BiH',
     'oposlovno_text_2' => 'Poljoprivredno-prehrambeni fakultet, Sarajevo',
     'oposlovno_text_3' => 'Federalni zavod za poljoprivredu, Sarajevo',
@@ -52,7 +52,7 @@ return [
     'oposlovno_text_21' => 'BN pro d.o.o. Sarajevo',
     'oposlovno_text_22' => 'Srbija',
     'oposlovno_text_23' => 'Institut za nuklearne nauke „Vinča“ Beograd',
-    'oposlovno_text_24' => 'Institut za tehnologiju nuklearnih i drugih mineralnih sirovina Beograd – ITNM',
+    'oposlovno_text_24' => 'Institut za tehnologiju nuklearnih i drugih mineralnih sirovina Beograd – ITNMS',
     'oposlovno_text_25' => 'Tehnološko-metalurški fakultet, Beograd',
     'oposlovno_text_26' => 'Institut za zemljište, Beograd',
     'oposlovno_text_27' => 'Institut  za pesticide i zaštitu životne sredine, Beograd',
