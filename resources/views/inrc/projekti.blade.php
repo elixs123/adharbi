@@ -10,7 +10,7 @@
     </div>
     <div class="row">
       <div class="col-lg-12" data-aos="fade-left">
-        <a href="{{asset('inrc/Pregled naučno-istraživačkih projekata za period mart 2017. - januar 2022. FINAL - bos.docx')}}"  target="_blank">PREGLED NAUČNO-ISTRAŽIVAČKIH PROJEKATA ZA PERIOD MART 2017. – APRIL 2022.</a>
+        <a href="{{asset('inrc/pregled.pdf')}}"  target="_blank">PREGLED NAUČNO-ISTRAŽIVAČKIH PROJEKATA ZA PERIOD MART 2017. – APRIL 2022.</a>
       </div>
       
     </div>
