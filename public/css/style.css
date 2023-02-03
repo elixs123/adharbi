@@ -17,14 +17,20 @@
   text-align: justify;
 }
 
+.carousel-item img{
+  height: auto;
+}
+
 @media only screen and (max-device-width: 480px) {
   .navbar-collapse{
-    background: #ddd;
-    height: 62vh;
+    height: 100vh;
   }
   .navbar-brand{
     padding: 0;
     padding-top: 0px !important;
+  }
+  .carousel-item img{
+    height: 400px;
   }
 }
 

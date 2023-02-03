@@ -80,6 +80,26 @@
   <script>
   $(window).on('load', function () {
     $('.loader').hide();
+
+    $('#navbarSupportedContent').css('padding-left', '13%');
+
+    $('.navbar-toggler').click(function(){
+      $('.callapse .show').css('height', '100vh');
+      $('.callapse .show').css('overflow', 'hidden');
+     
+
+      $('.container').css('padding', '0px');
+      $('body').css('overflow', 'hidden');
+      $('.navbar-brand').css('margin-right', 'calc(var(--bs-gutter-x) * .5')
+      $('.navbar-brand').css('margin-left', 'calc(var(--bs-gutter-x) * .5')
+      $('.navbar-toggler').css('margin-right', 'calc(var(--bs-gutter-x) * .5')
+      $('.navbar-toggler').css('margin-left', 'calc(var(--bs-gutter-x) * .5')
+     
+      $('.nav-item').css('width', '100%');
+
+      $('#navbarSupportedContent').css('padding-left', '0%');
+      $('.navbar-collapse').css('height', '100vh');
+    })
   }) 
 </script>
 </body>

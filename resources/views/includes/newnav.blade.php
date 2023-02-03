@@ -9,17 +9,13 @@
     </div>
    
   </div>
-<nav class="navbar navbar-expand-lg bg-light" style="height: 142px;padding: 0;height: 90px;transition: all 0.5s;
-    z-index: 997;
-    transition: all 0.5s;
-    background: #fff;
-    box-shadow: 0 4px 10px -3px hsl(0deg 0% 75% / 50%);">
+<nav class="navbar navbar-expand-lg bg-light">
   <div class="container">
     <a class="navbar-brand" href="{{route('home')}}" style="padding: 0;padding-top: 20px;"><img src="{{asset('img/logo.png')}}" alt="logo" style="width:120px; height:100px;padding: 12px;"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 13% !important;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{route('home')}}">{{ __('nav.pocetna') }}</a>

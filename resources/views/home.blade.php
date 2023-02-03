@@ -2,26 +2,26 @@
 
 @section('content')
 
-<div class="container" style="margin-top: -77px;">
+<div class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="600000">
         <div class="carousel-inner">
             <div class="carousel-item active img-fluid">
-                <img src="{{asset('assets/img/sliders/slider1.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider1.jpg')}}" style="height: auto;">
+                <img src="{{asset('assets/img/sliders/slider1.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider1.jpg')}}">
             </div>
             <div class="carousel-item">
-                <img src="{{asset('assets/img/sliders/slider2.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider2.jpg')}}" style="height: auto;">
+                <img src="{{asset('assets/img/sliders/slider2.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider2.jpg')}}">
             </div>
             <div class="carousel-item">
-                <img src="{{asset('assets/img/sliders/slider4.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider4.jpg')}}" style="height: auto;">
+                <img src="{{asset('assets/img/sliders/slider4.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider4.jpg')}}" >
             </div>
             <div class="carousel-item">
-                <img src="{{asset('assets/img/sliders/slider5.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider5.jpg')}}" style="height: autos;">
+                <img src="{{asset('assets/img/sliders/slider5.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider5.jpg')}}">
             </div>
             <div class="carousel-item">
-                <img src="{{asset('assets/img/sliders/slider6.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider6.jpg')}}" style="height: auto;">
+                <img src="{{asset('assets/img/sliders/slider6.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider6.jpg')}}">
             </div>
             <div class="carousel-item">
-                <img src="{{asset('assets/img/sliders/slider3.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider3.jpg')}}" style="height: auto;">
+                <img src="{{asset('assets/img/sliders/slider3.jpg')}}" class="d-block w-100" alt="{{asset('assets/img/sliders/slider3.jpg')}}">
             </div>
             <div class="text-img" style="cursor: pointer; z-index: 100;height: 40px;position: absolute;bottom: 0px;width: 100%; text-align: left;background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);border-color: rgb(24, 17, 12);width: 100%;border-color: rgba(24, 17, 12);">
                 @if(Config::get('app.locale') == 'ba')
