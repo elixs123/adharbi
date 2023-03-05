@@ -5,7 +5,7 @@
 <div id="page-content">
         <!-- eCommerce Product Edit Header -->
         <div class="content-header">
-           <h3 class="text-center"><strong>Rudarstvo</strong></h3>
+           <h3 class="text-center"><strong>RUDARSTVO I GEOLOGIJA<</strong></h3>
         </div>
         <!-- END eCommerce Product Edit Header -->
 
@@ -16,7 +16,7 @@
                 <div class="block">
                     <!-- General Data Title -->
                     <div class="block-title">
-                        <h2><i class="fa fa-pencil"></i> <strong>Editovanje</strong> stranice Rudarstvo</h2>
+                        <h2><i class="fa fa-pencil"></i> <strong>Editovanje</strong> stranice RUDARSTVO I GEOLOGIJA<</h2>
                     </div>
                     <!-- END General Data Title -->
 

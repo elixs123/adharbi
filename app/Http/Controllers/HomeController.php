@@ -7,6 +7,7 @@ use App\Models\Pages;
 use App\Models\Sub_Pages;
 use App\Models\News;
 use App\Models\Gallery;
+use App\Models\Projekti;
 use Mail;
 
 class HomeController extends Controller
@@ -83,11 +84,15 @@ class HomeController extends Controller
     }
 
     public function projekti(){
-        return view('inrc.projekti');
+        $projekti = Projekti::where('type', 'Aktuelni projekti')->get();
+
+        return view('inrc.projekti', ["projekti" => $projekti]);
     }
 
     public function biblioteka(){
-        return view('inrc.biblioteka');
+        $projekti = Projekti::where('type', 'Biblioteka objavljenih radova')->get();
+
+        return view('inrc.biblioteka', ["projekti" => $projekti]);
     }
 
     public function rudarstvo(){

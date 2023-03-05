@@ -46,8 +46,8 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{route('oinrc')}}">O INRC</a></li>
             <li><a class="dropdown-item" href="{{route('sektori')}}">SEKTORI</a></li>
-            <li><a class="dropdown-item" href="{{route('projekti')}}">Aktuelni projekti</a></li>
-            <li><a class="dropdown-item" href="{{route('biblioteka')}}">Biblioteka objavljenih radova</a></li>
+            <li><a class="dropdown-item" href="{{route('projekti')}}">POSTERI</a></li>
+            <li><a class="dropdown-item" href="{{route('biblioteka')}}">BIBLIOTEKA OBJAVLJENJIH RADOVA</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -55,13 +55,13 @@
           {{ __('nav.sektori') }}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('rudarstvo')}}">Rudarstvo</a></li>
-            <li><a class="dropdown-item" href="{{route('tehnicko-tehnoloski')}}">Tehničko-Tehnološki</a></li>
-            <li><a class="dropdown-item" href="{{route('agroharbi')}}">Agroharbi</a></li>
-            <li><a class="dropdown-item" href="{{route('farmacija')}}">Farmacija</a></li>
-            <li><a class="dropdown-item" href="{{route('harbilab')}}">Harbilab</a></li>
-            <li><a class="dropdown-item" href="{{route('proizvodnja')}}">Proizvodnja</a></li>
-            <li><a class="dropdown-item" href="{{route('gradjevina')}}">Građevina</a></li>
+            <li><a class="dropdown-item" href="{{route('rudarstvo')}}">RUDARSTVO</a></li>
+            <li><a class="dropdown-item" href="{{route('tehnicko-tehnoloski')}}">TEHNIČKO-TEHNOLOŠKI</a></li>
+            <li><a class="dropdown-item" href="{{route('agroharbi')}}">AGROHARBIi</a></li>
+            <li><a class="dropdown-item" href="{{route('farmacija')}}">FARMACIJA</a></li>
+            <li><a class="dropdown-item" href="{{route('harbilab')}}">HARBILAB</a></li>
+            <li><a class="dropdown-item" href="{{route('proizvodnja')}}">PROIZVODNJA</a></li>
+            <li><a class="dropdown-item" href="{{route('gradjevina')}}">GRAĐEVINA</a></li>
           </ul>
         </li>
         <li class="nav-item">

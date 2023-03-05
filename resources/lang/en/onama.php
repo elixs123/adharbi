@@ -32,7 +32,7 @@ return [
 
     'oposlovno' => 'LIST OF INSTITUTIONS AND COMAPNIES',
 
-    'oposlovno_text_1' => 'Bosna and Herzegovina',
+    'oposlovno_text_1' => 'BOSNIA AND HERZEGOVINA',
     'oposlovno_text_2' => 'Faculty of Agriculture and Food, Sarajevo',
     'oposlovno_text_3' => 'Federal Institute for Agriculture, Sarajevo',
     'oposlovno_text_4' => 'Federal Institute for Agropedology, Sarajevo',

@@ -79,6 +79,12 @@ Route::prefix('admin')->group(function (){
 
         Route::get('alljobs/edit/{id}', [AdminController::class, 'editJob'])->name('editjob');
         Route::post('alljobs/edit/{id}', [AdminController::class, 'updateJob']);
+
+        Route::get('aktuelni', [AdminController::class, 'aktuelniProjekti'])->name('aktuelniProjekti');
+        Route::delete('aktuelni', [AdminController::class, 'deleteAktuelniProjekti']);
+
+        Route::get('adminAddProjects', [AdminController::class, 'addProjects'])->name('addProjects');
+        Route::post('adminAddProjects', [AdminController::class, 'addProject']);
     });
 });
 

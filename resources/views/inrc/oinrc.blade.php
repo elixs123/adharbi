@@ -27,8 +27,11 @@
           <ul>
             <li><b>RUDARSTVO I GEOLOGIJA</b></li>
             <li><b>TEHNIČKO-TEHNOLOŠKI SEKTOR</b></li>
+            <li><b>AGROHARBI</b></li>
             <li><b>FARMACIJA</b></li>
-            <li><b>GRAĐEVINARSTVO I PROIZVODNJA</b></li>
+            <li><b>HARBILAB</b></li>
+            <li><b>PROIZVODNJA</b></li>
+            <li><b>GRAĐEVINA</b></li>
           </ul>
           <p>Svaki sektor može djelovati zasebno i pružati usluge trećim licima, ali najbolje, najkvalitetnije i najefikasnije učinke ima u sinergiji sa ostalim sektorima, a pod okriljem i koordinacijom INRC-a.</p>
         </div>

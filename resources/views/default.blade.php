@@ -31,6 +31,9 @@
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
   <link href="{{ asset('css/nav.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+  <script 
+src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
+  </script>
   <style>
     
 .loader{
@@ -56,7 +59,7 @@
         <!-- ======= Services Section ======= -->
         
     @include('includes.newnav')
-   
+   <br>
     @yield('content')
 
   </main><!-- End #main -->
@@ -80,6 +83,8 @@
   <script>
   $(window).on('load', function () {
     $('.loader').hide();
+    $('.showContact').hide();
+    
 
     $('#navbarSupportedContent').css('padding-left', '13%');
 

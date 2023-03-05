@@ -10,6 +10,7 @@ use App\Models\News;
 use App\Models\Gallery;
 use App\Models\Job;
 use App\Models\Alljob;
+use App\Models\Projekti;
 use Validator;
 
 class AdminController extends Controller
@@ -18,6 +19,47 @@ class AdminController extends Controller
         $jobs = Job::all();
 
         return view('admin.posao', ['jobs' => $jobs]);
+    }
+
+    public function aktuelniProjekti(){
+        $projekti = Projekti::all();
+
+        return view('admin.inrc.aktuelniProjekti', ['projekti' => $projekti]);
+    }
+
+    public function deleteAktuelniProjekti(Request $request){
+        $projekat = Projekti::find($request->input('id'));
+        $projekat->delete();
+
+        return redirect()->back()->with('message', 'Uspješno ste izbrisali projekat');;
+    }
+
+    public function addProjects(){
+        return view('admin.inrc.addProject');
+    }
+
+    public function addProject(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'file' => 'required',
+            'type' => 'required',
+        ],[
+            'name.required' => 'Polje ime je obavezno'
+        ]);
+
+        $file = $request->file('file');
+
+        $fileName = $file->getClientOriginalName();
+        $destinationPath = public_path('/projekti');
+        $file->move($destinationPath, $fileName);
+
+        $projekat = new Projekti();
+        $projekat->name = $request->input('name');
+        $projekat->file = $fileName;
+        $projekat->type = $request->input('type');
+        $projekat->save();
+
+        return redirect()->back()->with('message', 'Uspješno ste dodali projekat');
     }
 
     public function news(){
@@ -29,7 +71,7 @@ class AdminController extends Controller
     public function deleteNews($id){
         News::find($id)->delete();
 
-        return redirect()->back()->with('mesasge', 'Uspješno ste obrisali novost');
+        return redirect()->back()->with('message', 'Uspješno ste obrisali novost');
     }
 
     public function addNews(){

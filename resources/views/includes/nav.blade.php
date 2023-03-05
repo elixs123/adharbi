@@ -61,7 +61,7 @@
 
         <ul>
 
-               <li><a class="nav-link scrollto" href="https://adharbi.mhds.ba/rudarstvo.html">Rudarstvo</a></li>
+               <li><a class="nav-link scrollto" href="https://adharbi.mhds.ba/rudarstvo.html">RUDARSTVO I GEOLOGIJA<</a></li>
                <li><a class="nav-link scrollto" href="https://adharbi.mhds.ba/tehnoloski.html">Tehničko-Tehnološki</a></li>
                <li><a class="nav-link scrollto" href="https://adharbi.mhds.ba/agroharbi.html">Agroharbi</a></li>
                <li><a class="nav-link scrollto" href="https://adharbi.mhds.ba/farmacija.html">Farmacija</a></li>
