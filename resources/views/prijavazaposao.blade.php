@@ -5,73 +5,73 @@
 <section id="about" class="about" style="overflow: unset !important;">
   <div class="container">
     <div class="section-title" data-aos="fade-up">
-        <h1>PRIJAVA ZA POSAO</h1>
+        <h1>{{ __('posao.title') }}</h1>
     </div>
     <div class="row" data-aos="fade-bottom">
         <div class="col-lg-12">
             <form class="row g-3" method="POST" action="{{route('prijavazaposao')}}" enctype="multipart/form-data">
                 @csrf
-                <h2>Lične informacije</h2>
+                <h2>{{ __('posao.informacije') }}</h2>
                 <div class="col-md-6">
-                    <label for="ime" class="form-label">Ime</label>
+                    <label for="ime" class="form-label">{{ __('posao.name') }}</label>
                     <input type="name" class="form-control @error('name') border border-danger @enderror" id="ime" name="ime">
                     @error('name')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-md-6">
-                    <label for="prezime" class="form-label">Prezime</label>
+                    <label for="prezime" class="form-label">{{ __('posao.lastname') }}</label>
                     <input type="name" class="form-control @error('prezime') border border-danger @enderror" id="prezime" name="prezime">
                     @error('prezime')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-md-6">
-                    <label for="drodjenja" class="form-label">Datum rođenja</label>
+                    <label for="drodjenja" class="form-label">{{ __('posao.dateofbeard') }}</label>
                     <input type="name" class="form-control @error('drodjenja') border border-danger @enderror" id="drodjenja" name="drodjenja">
                     @error('drodjenja')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-md-6">
-                    <label for="drzavljanstvo" class="form-label">Državljanstvo</label>
+                    <label for="drzavljanstvo" class="form-label">{{ __('posao.citizenship') }}</label>
                     <input type="text" class="form-control @error('drzavljanstvo') border border-danger @enderror" id="drzavljanstvo" name="drzavljanstvo">
                     @error('drzavljanstvo')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-md-6">
-                    <label for="adresa" class="form-label">Adresa stanovanja</label>
+                    <label for="adresa" class="form-label">{{ __('posao.address') }}</label>
                     <input type="text" class="form-control @error('adresa') border border-danger @enderror" id="adresa" name="adresa">
                     @error('adresa')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-md-6">
-                    <label for="grad" class="form-label">Grad stanovanja</label>
+                    <label for="grad" class="form-label">{{ __('posao.city') }}</label>
                     <input type="text" class="form-control @error('grad') border border-danger @enderror" id="grad" name="grad">
                     @error('grad')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-md-6">
-                    <label for="telefon" class="form-label">Kontakt telefon</label>
+                    <label for="telefon" class="form-label">{{ __('posao.phone') }}</label>
                     <input type="text" class="form-control @error('telefon') border border-danger @enderror" id="telefon" name="telefon">
                     @error('telefon')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-md-6">
-                    <label for="email" class="form-label">Email</label>
+                    <label for="email" class="form-label">{{ __('posao.email') }}</label>
                     <input type="text" class="form-control @error('email') border border-danger @enderror" id="email" name="email">
                     @error('email')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-md-12">
-                    <label for="posao" class="form-label">Izaberite radno mjesto na koje se prijavljujete</label>
+                    <label for="posao" class="form-label">{{ __('posao.chosejob') }}</label>
                     <select name="posao" id="posao" class="form-select @error('posao') border border-danger @enderror">
-                        <option selected>Izaberite radno mjesto</option>
+                        <option selected>{{ __('posao.chosejobinput') }}</option>
                         @forelse($alljobs as $job)
                             <option value="{{$job->name}}">{{$job->name}}</option>
                         @empty
@@ -83,9 +83,9 @@
                     @enderror
                 </div>
                 <div class="col-md-12 @error('vozacka') border border-danger @enderror">
-                    <label for="vozacka" class="form-label">Vozačka dozvola</label>
+                    <label for="vozacka" class="form-label">{{ __('posao.driverlicense') }}</label>
                     <select name="vozacka" id="vozacka" class="form-select">
-                        <option selected>Izaberite stavku</option>
+                        <option selected>{{ __('posao.driverlicenseinput') }}</option>
                         <option value="Da">Da</option>
                         <option value="Da">Ne</option>
                     </select>
@@ -93,11 +93,11 @@
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
-                <h2>Podaci o obrazovanju</h2>
+                <h2>{{ __('posao.schoolinfo') }}</h2>
                 <div class="col-md-4">
-                    <label for="s_sprema" class="form-label">Stepen stručne spreme</label>
+                    <label for="s_sprema" class="form-label">{{ __('posao.schoolinfo1') }}</label>
                     <select name="s_sprema" id="s_sprema" class="form-select @error('s_sprema') border border-danger @enderror">
-                        <option selected>Izaberite stavku</option>
+                        <option selected>{{ __('posao.schoolinfo1input') }}</option>
                         <option value="Nekvalifikovani radnik">Nekvalifikovani radnik</option>
                         <option value="Srednja strucna sprema">Srednja stručna sprema</option>
                         <option value="Visoko kvalifikovan">Visoko kvalifikovan</option>
@@ -110,21 +110,21 @@
                     @enderror
                 </div>
                 <div class="col-md-4">
-                    <label for="n_skole" class="form-label @error('n_skole') border border-danger @enderror">Naziv škole/fakultet</label>
+                    <label for="n_skole" class="form-label @error('n_skole') border border-danger @enderror">{{ __('posao.schoolname') }}</label>
                     <input type="text" name="n_skole" id="n_skole" class="form-control">
                     @error('n_skole')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-md-4">
-                    <label for="s_zvanje" class="form-label @error('s_zvanje') border border-danger @enderror">Stečeno zvanje</label>
+                    <label for="s_zvanje" class="form-label @error('s_zvanje') border border-danger @enderror">{{ __('posao.schooldiplom') }}</label>
                     <input type="text" name="s_zvanje" id="s_zvanje" class="form-control">
                     @error('s_zvanje')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
-                <h2>Radno iskustvo</h2>
-                <h6>Ukoliko nemate radnog iskustva, izostavite ovu sekciju</h6>
+                <h2>{{ __('posao.jobexperince') }}</h2>
+                <h6>{{ __('posao.jobexperinecetext') }}</h6>
                 <div class="col-md-4">
                     <label for="n_kompanije" class="form-label @error('n_kompanije') border border-danger @enderror">Naziv kompanije</label>
                     <input type="text" name="n_kompanije" id="n_kompanije" class="form-control">

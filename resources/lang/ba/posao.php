@@ -1,4 +1,4 @@
-<?php 
+<?php
     return [
         'title' => 'PRIJAVA ZA POSAO',
         'informacije' => 'Lične informacije',
@@ -9,5 +9,32 @@
         'address' => 'Adresa stanovanja',
         'city' => 'Grad stanovanja',
         'phone' => 'Kontakt telefon',
-        
+        'email' => 'Email',
+        'chosejob' => 'Izaberite radno mjesto na koje se prijavljujete',
+        'chosejobinput' => 'Izaberite radno mjesto',
+        'driverlicense' => 'Vozačka dozvola',
+        'driverlicenseinput' => 'Izaberite stakvu',
+        'schoolinfo' => 'Podaci o obrazovanju',
+        'schoolinfo1' => 'Stepen stručne spreme',
+        'schoolinfo1input' => 'Izaberite stavku',
+        'schoolname' => 'Naziv škole/fakultet',
+        'schooldiplom' => 'Stečeno zvanje',
+        'jobexperince' => 'Radno iskustvo',
+        'jobexperinecetext' => 'Ukoliko nemate radnog iskustva, izostavite ovu sekciju',
+        'jobnamecompany' => 'Naziv kompanije',
+        'jobname'   =>  'Radno mjesto',
+        'jobtime'   =>  'Vremenski period',
+        'pcexperience'  =>  'Poznavanje rada na računaru',
+        'excel' =>  'MS Excel',
+        'excelinput'    =>  'Izaberite stakvu',
+        'languge'   => 'Znanje stranih jezika',
+        'enlanguge' =>  'Engleski jezik',
+        'enlangugeinput'    =>  'Izaberite stakvu',
+        'enlanguge1'    =>  'Ne poznajem',
+        'enlanguge2'    =>  'Početnik',
+        'enlanguge3'    =>  'Korisnik',
+        'enlanguge4'    =>  'Napredni korisnik',
+        'letterofmotivation'    =>  'Pismo motivacije',
+        'biografija'    =>  'Biografija',
+        'send'  =>  'Pošalji'
     ];
