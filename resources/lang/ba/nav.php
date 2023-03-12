@@ -16,4 +16,9 @@
         'odrzivost'  => 'DRUŠTVENA ODGOVORNOST',
         'karijera'   => 'karijera',
         'kontakt'    => 'kontakt',
+        'prijavazaposao' => 'PRIJAVA ZA POSAO',
+        'otvorenepozicije' => 'OTVORENE POZICIJE',
+        'drustvenaodgovornost' => 'DRUŠTVENA ODGOVORNOST',
+        'sponzorstva' => 'SPONZORSTVA I DONACIJE',
+        'zahvalnice' => 'ZAHVALNICE'
     ];

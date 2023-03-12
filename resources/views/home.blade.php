@@ -43,7 +43,19 @@
         
     </div>
     <div class="col-12">
-        <a href="{{route('pocetna')}}" class="mt-2 p-2 d-block text-center fw-bold" style="text-decoration: none; color: black;font-family: 'Arial,sans-serif';font-size: 20px;line-height: 1.42857143">Intro <i class="fa-solid fa-arrow-right"></i></a>
+
+        <a href="{{route('pocetna')}}" class="mt-2 p-2 d-block text-center fw-bold" style="text-decoration: none; color: darkgreen;font-family: 'Arial,sans-serif';font-size: 20px;line-height: 1.42857143">NEKOLIKO RIJEČI DIREKTORA <i class="fa-solid fa-play"></i><!--<i class="fa-solid fa-play" style="ext-align: center;
+    border: 3px solid black;
+    width: 100px;
+    /* height: 100px; */
+    /* padding-top: 28.2px; */
+    padding-left: 1%;
+    border-radius: 50%;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4em;
+    padding: 20px;"></i>--></a>
     </div>
 </div>
 <script>

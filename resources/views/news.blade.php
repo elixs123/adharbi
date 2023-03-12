@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
   <div class="section-title" data-aos="fade-up">
-    <h2>Novosti</h2>
+    <h2>{{ __('news.title')}}</h2>
   </div>
   <div class="row" data-aos="fade-up">
     <div class="col-lg-12 d-flex justify-content-center">
@@ -18,7 +18,7 @@
         <div class="portfolio-info">
           <b><h5>{{$new->name}}</h5></b>
           <p style="font-size:10px;">{{$new->created_at->format('d.m.Y H:i')}}</p>
-          <p style="font-size:12px;"><?php echo $new->description ?><a href="{{route('newsDetails', ['id' => $new->id])}}">Procitaj vise</a></p>
+          <p style="font-size:12px;"><?php echo $new->description ?><a href="{{route('newsDetails', ['id' => $new->id])}}">{{ __('news.readmore')}}</a></p>
         </div>
     </div>
     @endforeach

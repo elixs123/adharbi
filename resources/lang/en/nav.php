@@ -15,5 +15,10 @@
         'webshop'    => 'webshop',
         'odrzivost'  => 'sustainability',
         'karijera'   => 'Career',
-        'kontakt'    => 'Contact'
+        'kontakt'    => 'Contact',
+        'prijavazaposao' => 'JOB APPLICATION',
+        'otvorenepozicije' => 'OPEN POSITIONS',
+        'drustvenaodgovornost' => 'SOCIAL RESPONSIBILITY',
+        'sponzorstva' => 'SPONSORSHIPS AND DONATIONS',
+        'zahvalnice' => 'ACKNOWLEDGMENTS'
     ];

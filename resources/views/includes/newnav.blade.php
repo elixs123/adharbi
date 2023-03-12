@@ -44,10 +44,10 @@
             {{ __('nav.inrc') }}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('oinrc')}}">O INRC</a></li>
-            <li><a class="dropdown-item" href="{{route('sektori')}}">SEKTORI</a></li>
-            <li><a class="dropdown-item" href="{{route('projekti')}}">POSTERI</a></li>
-            <li><a class="dropdown-item" href="{{route('biblioteka')}}">BIBLIOTEKA OBJAVLJENJIH RADOVA</a></li>
+            <li><a class="dropdown-item" href="{{route('oinrc')}}">{{ __('inrc.oinrc') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('sektori')}}">{{ __('inrc.sektori') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('projekti')}}">{{ __('inrc.posteri') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('biblioteka')}}">{{ __('inrc.libary') }}</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -72,16 +72,16 @@
           {{ __('nav.odrzivost') }}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('historijat')}}">Društvena odgovornost</a></li>
-            <li><a class="dropdown-item" href="{{route('kosmo')}}">Sponzorstva i donacije</a></li>
-            <li><a class="dropdown-item" href="{{route('ostruktura')}}">Zahvalnice</a></li>
+            <li><a class="dropdown-item" href="{{route('historijat')}}">{{ __('nav.drustvenaodgovornost') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('kosmo')}}">{{ __('nav.sponzorstva') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('ostruktura')}}">{{ __('nav.zahvalnice') }}</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ __('nav.karijera') }}</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('prijavazaposao')}}">Prijava za posao</a></li>
-            <li><a class="dropdown-item" href="{{route('openjobs')}}">Otvorene pozicije</a></li>
+            <li><a class="dropdown-item" href="{{route('prijavazaposao')}}">{{ __('nav.prijavazaposao') }}</a></li>
+            <li><a class="dropdown-item" href="{{route('openjobs')}}">{{ __('nav.otvorenepozicije') }}</a></li>
           </ul>
         </li>
         <li class="nav-item">
